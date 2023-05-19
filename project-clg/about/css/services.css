@@ -1,0 +1,361 @@
+.titles h2{
+    margin-left: 20px;
+    font-size: 30px;
+    margin-bottom: 2rem;
+    /* line-height: 1.6; */
+    text-align: center;
+}
+.titles p{
+    margin-left: 20px;
+    margin-bottom: 5rem;
+    line-height: 1.6;
+    color: #36454F;
+    text-align: center;
+}
+.services{
+    letter-spacing: 1px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 30px;
+    position: relative;
+}
+.services .card{
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+    width: 350px;
+    height: 190px;
+    background: #04a8fc;
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0,0,0,0.15);
+    transition: 0.5s;
+}
+.services .card:hover{
+    height: 450px;
+}
+.services .card .imgbx{
+    position: absolute;
+    left: 50%;
+    top: -50px;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 150px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.35);
+    overflow: hidden;
+    transition: 0.5s;
+}
+.services .card .imgbx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card:hover .imgbx{
+    width: 250px;
+    height: 250px;
+}
+.card .content{
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+.card .content .detail{
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+    transform: translateY(150px);
+}
+.card:hover .content .detail{
+    transform: translateY(0px);
+}
+.card .content .detail h2{
+    font-size: 1.25em;
+    font-weight: 900;
+    color: #fff;
+    line-height: 1.2em;
+}
+.card .content .detail h2 span{
+    font-size: 0.75em;
+    font-weight: 600;
+    opacity: 0.5;
+}
+.card .content .detail .data{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.card .content .detail .data h3{
+    font-size: 1em;
+    color: rgb(188, 187, 187);
+    line-height: 1.2em;
+    font-weight: 600;
+}
+.card .content .detail .data h3 span{
+    font-size: 0.85em;
+    font-weight: 400;
+    opacity: 0.5;
+}
+.card .content .detail .actionbtn{
+    display: flex;
+    justify-content: center;
+}
+.card .content .detail .actionbtn a{
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    font-weight: 500;
+    background: #ff5f95;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+/*service*/
+
+.container{
+    position: relative;
+    width: 1500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 20px 10px;
+}
+.titles h2{
+    text-align: center;
+}
+.titles p{
+    text-align: center;
+}
+.container .cards-0{
+    margin: 17px;
+    position: relative;
+    width: 320px;
+    height: 300px;
+    background: #04a8fc;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 15px 15px 15px 15px rgba(0, 0, 0, 0.2);
+}
+.cards-0::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    transform: skewY(345deg);
+    transition: 0.5s;
+}
+.cards-0:hover::before{
+    top: -70%;
+    transform: skewY(390deg);
+}
+.cards-0::after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 8em;
+    color: rgba(0,0,0,0.1);
+}
+.cards-0 .imgBx{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1;
+}
+.cards-0 img{
+    width: 100%;
+}
+.cards-0 .imgBx img{
+    max-width: 100%;
+    transition: 0.5s;
+}
+.cards-0:hover .imgBx img{
+    max-width: 50%;
+}
+.cards-0 .contentBx{
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+}
+.cards-0 .contentBx h3{
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.cards-0 .contentBx .price{
+    font-size: 24px;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.cards-0 .contentBx .buy{
+    position: relative;
+    top: 200px;
+    opacity: 0;
+    padding: 10px 30px;
+    margin-top: 15px;
+    color: #fff;
+    text-decoration: none;
+    background: #2196f3;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+.cards-0:hover .contentBx .buy{
+    top: 0;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Service Page */
+.containers{
+    position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    flex-wrap: wrap;
+}
+
+.cards-1 {
+    position: relative;
+	background-color:var(--white-text);
+	border-radius: 1rem;
+	box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+	display: flex;	
+	margin: 1.5rem;
+	overflow: hidden;
+	width: 30rem;
+	height: 19rem;
+    z-index: 1000;
+}
+
+.cards-1 h6 {
+	opacity: 0.6;	
+	letter-spacing: .1rem;
+	text-transform: uppercase;
+}
+
+.cards-1 h2 {
+	letter-spacing: .1rem;
+	margin: 1rem 0;
+    text-transform: uppercase;
+}
+
+.left-column {	
+	color: var(--white-text);
+	padding: 2rem;
+	max-width: 10rem;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #04a8fc;
+}
+
+.left-column h2{
+    font-size: 16px;
+    text-transform: uppercase;
+	color: var(--white-text);
+}
+
+.left-column img{
+    width: 100%;
+}
+
+.right-column {
+	padding: 30px;
+	width: 100%;
+	display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+	
+}
+.right-column h2{
+    font-size: 20px;
+}
+.right-column p{	
+	font-size: .9rem;
+	color: var(--black-text)
+}
+
+.right-column a {
+	border-radius: 3rem;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+	color: #fff;
+	font-size: 1.2rem;
+	padding: .8rem 1.5rem;
+	letter-spacing: .1rem;
+	align-self: flex-end;
+    text-decoration: none;
+    background-color: #04a8fc;
+}
+
+/*media queries*/
+
+@media (max-width: 1030px) {
+	.containers{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height:auto;
+	}
+}

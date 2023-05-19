@@ -1,0 +1,37 @@
+.conatiner{
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    align-items: center;
+    padding: 6rem 4rem;
+}
+.conatiner .card{
+    text-align: justify;
+}
+.conatiner .card h2{
+    margin-left: 20px;
+    font-size: 30px;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+.conatiner .card p{
+    margin-left: 20px;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    color: #36454F;
+}
+.conatiner .imgs img{
+    display: block;
+    width: 100%;
+}
+
+#header-shape{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+@media (max-width: 300px){
+    .conatiner{
+        width: 130%;
+    }
+}

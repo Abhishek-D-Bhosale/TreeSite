@@ -1,0 +1,327 @@
+.titles h2{
+    margin-left: 20px;
+    font-size: 30px;
+    margin-bottom: 2rem;
+    /* line-height: 1.6; */
+    text-align: center;
+}
+.titles p{
+    margin-left: 20px;
+    margin-bottom: 5rem;
+    line-height: 1.6;
+    color: #36454F;
+    text-align: center;
+}
+.services{
+    letter-spacing: 1px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+.services .card{
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+    width: 350px;
+    height: 190px;
+    background: rgb(240, 8, 70);
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0,0,0,0.15);
+    transition: 0.5s;
+}
+.services .card:hover{
+    height: 450px;
+}
+.services .card .imgbx{
+    position: absolute;
+    left: 50%;
+    top: -50px;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 150px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.35);
+    overflow: hidden;
+    transition: 0.5s;
+}
+.services .card .imgbx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card:hover .imgbx{
+    width: 250px;
+    height: 250px;
+}
+.card .content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+.card .content .detail{
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+    transform: translateY(150px);
+}
+.card:hover .content .detail{
+    transform: translateY(0px);
+}
+.card .content .detail h2{
+    font-size: 1.25em;
+    font-weight: 900;
+    color: #555;
+    line-height: 1.2em;
+}
+.card .content .detail h2 span{
+    font-size: 0.75em;
+    font-weight: 600;
+    opacity: 0.5;
+}
+.card .content .detail .data{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.card .content .detail .data h3{
+    font-size: 1em;
+    color: #555;
+    line-height: 1.2em;
+    font-weight: 600;
+}
+.card .content .detail .data h3 span{
+    font-size: 0.85em;
+    font-weight: 400;
+    opacity: 0.5;
+}
+.card .content .detail .actionbtn{
+    display: flex;
+    justify-content: center;
+}
+.card .content .detail .actionbtn a{
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    font-weight: 500;
+    background: #ff5f95;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+
+/* Service Page */
+.containers{
+	display: flex;
+	justify-content: center;
+	height: 100vh;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cards-1 {
+	background-color:var(--white-text);
+	border-radius: 1rem;
+	box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+	display: flex;	
+	margin: 1.5rem;
+	overflow: hidden;
+	width: 30rem;
+	height: 19rem;
+}
+
+.cards-1 h6 {
+	opacity: 0.6;	
+	letter-spacing: .1rem;
+	text-transform: uppercase;
+}
+
+.cards-1 h2 {
+	letter-spacing: .1rem;
+	margin: 1rem 0;
+    text-transform: uppercase;
+}
+
+.left-column {	
+	color: var(--white-text);
+	padding: 2rem;
+	max-width: 10rem;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ff5f95;
+}
+
+.left-column h2{
+    font-size: 16px;
+    text-transform: uppercase;
+	color: var(--white-text);
+}
+
+.left-column img{
+    width: 100%;
+}
+
+.right-column {
+	padding: 30px;
+	width: 100%;
+	display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+	
+}
+.right-column h2{
+    font-size: 20px;
+}
+.right-column p{	
+	font-size: .9rem;
+	color: var(--black-text)
+}
+
+.right-column a {
+	border-radius: 3rem;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+	color: #fff;
+	font-size: 1.2rem;
+	padding: .8rem 1.5rem;
+	letter-spacing: .1rem;
+	align-self: flex-end;
+    text-decoration: none;
+    background-color: #ff5f95;
+}
+
+/*media queries*/
+
+@media (max-width: 1030px) {
+	.containers{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height:auto;
+	}
+}
+
+
+
+/* Contact */
+
+.contact h2{
+    text-align: center;
+}
+.contact p{
+    text-align: center;
+}
+.contactus{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+.contactus .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 10px;
+    position: relative;
+    margin: 10px;
+    align-content: center;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: none;
+}
+
+.input-box{
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+}
+.input-box input,
+.input-box textarea{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: #F0F1F8;
+    border-radius: 6px;
+    padding: 0 15px;
+    resize: none;
+}
+.message-box{
+    min-height: 110px;
+}
+.input-box textarea{
+    padding-top: 6px;
+}
+.button{
+    display: inline-block;
+    margin-top: 12px;
+}
+.button input[type="submit"]{
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: #3e2093;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.button input[type="submit"]:hover{
+    background: #5029bc;
+}
+
+@media (max-width: 950px) {
+    .contactus{
+        width: 90%;
+        padding: 30px 40px 40px 35px ;
+    }
+    .contactus .content {
+        width: 75%;
+        margin-left: 55px;
+    }
+}
+@media (max-width: 820px) {
+    .contactus{
+        margin: 40px 0;
+        height: 100%;
+    }
+    .contactus .content{
+        flex-direction: column-reverse;
+    }
+    .contactus .content .left-side{
+        width: 100%;
+        flex-direction: row;
+        margin-top: 40px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .contactus .content .left-side::before{
+        display: none;
+    }
+    .contactus .content .right-side{
+        width: 100%;
+        margin-left: 0;
+    }
+}

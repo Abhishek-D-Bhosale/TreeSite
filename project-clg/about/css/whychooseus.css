@@ -1,0 +1,88 @@
+.whychooseus{
+  margin: 10px;
+  padding: 20px;
+  z-index: none;
+}
+.whychooseus h2{
+  text-align: center;
+}
+.whychooseus p{
+  text-align: center;
+}
+section {
+  display: flex;
+  padding: 4em 4em;
+  margin: 5rem;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.container-why {
+  perspective: 1000px;
+  height: 28vh;
+  width: 80%;
+}
+.card-why {
+  transform-style: preserve-3d;
+  height: 100%;
+  width: 80%;
+  transition: 0.5s ease;
+}
+.front,
+.back {
+  height: 100%;
+  width: 100%;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 0.4em;
+  position: absolute;
+  backface-visibility: hidden;
+}
+.front {
+  background: #04a8fc;
+}
+.front img {
+  width: 5em;
+}
+.content-why {
+  transform: translateZ(60px);
+}
+.content-why h3 {
+  font-size: 22px;
+  margin-top: 1em;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+.content-why p {
+  font-size: 14px;
+  line-height: 2em;
+  letter-spacing: 0.02em;
+  padding: 0 3em;
+}
+.back {
+  background-color: #28253a;
+  transform: rotateX(180deg);
+}
+.container-why:hover .card-why {
+  transform: rotateX(180deg);
+}
+@media screen and (min-width: 992px) {
+  section {
+    padding: 0 1em;
+    width: 100%;
+  }
+  .container-why{
+    flex-basis: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 0 1.5em;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .container-why{
+    width: 100%;
+  }
+}

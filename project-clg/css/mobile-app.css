@@ -1,0 +1,64 @@
+.downloadapp{
+    margin: 30px;
+    padding: 6rem 4rem;
+}
+.downloadapp .title h2{
+    text-align: center;
+}
+.downloadapp .title p{
+    text-align: center;
+}
+.mobile-app{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+.mobile-app .cards{
+    margin: 20px;
+    padding: 10px;
+    position: relative;
+    width: 900px;
+    margin: 10px;
+    align-content: center;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: none;
+    border-bottom: 1.5px dashed rgb(49, 48, 48);
+}
+.mobile-app .cards h2{
+    margin-left: 20px;
+    font-size: 24px;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+.mobile-app .cards p{
+    padding: 10px;
+    margin-left: 20px;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    color: #36454F;
+    border-bottom: 1.5px dashed rgb(49, 48, 48);
+}
+.mobile-app .images img{
+    display: block;
+    width: 80%;
+}
+.download-btns{
+    display: flex;
+}
+.download-btns a{
+    display: inline;
+    text-align: center;
+}
+.download-btns img{
+    display: inline-block;
+    width: 50%;
+}
+@media (max-width: 768px){
+    .downloadapp .mobile-app{
+        width: 100%;
+    }
+}
